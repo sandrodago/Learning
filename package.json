@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "learning many tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandrodago/Learning.git"
+  },
+  "author": "Alex D'Agostino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandrodago/Learning/issues"
+  },
+  "homepage": "https://github.com/sandrodago/Learning#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
