@@ -2,9 +2,14 @@ var gulp = require('gulp'); // get the gulp commands
 var sass = require('gulp-sass'); // be able to translat scss to css
 var browserSync = require('browser-sync').create(); // get the browser sync service
 
+
+
+
 gulp.task('hello', function() {
 	console.log("Hello, Alex!");
 });
+
+
 
 gulp.task('sass', function() {
 	return gulp.src('app/scss/**/*.scss')
@@ -14,6 +19,17 @@ gulp.task('sass', function() {
 			stream: true
 		}))
 });
+
+
+// browser sync needs to know where the server is to continuously spin the page.
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: 'app'
+    },
+  })
+})
+
 
 // Gulp watch syntax, allows function to keep running on file-save.
 gulp.task('watch', ['browserSync', 'sass'], function(){ 
@@ -25,11 +41,6 @@ gulp.task('watch', ['browserSync', 'sass'], function(){
   // Other watchers
 })
 
-// browser sync needs to know where the server is to continuously spin the page.
-gulp.task('browserSync', function() {
-  browserSync.init({
-    server: {
-      baseDir: 'app'
-    },
-  })
-})
+
+
+
