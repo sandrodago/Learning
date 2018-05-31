@@ -11,6 +11,6 @@ This is commit 7, let's see what happens. rebaseing from master.
 This is commit 8, from master. trying rebase down again.
 This is commit 9~!!!!!!
 lets try with no conflicts! commit 10.
-
 this is a commit done on master. try rebasing without changes on branch 12.
 Another commit on Master. will do a commit after this on the branch. and then rebase. commit 13.
+This is the commit done after master has been changed, but rebasing hasnt't been done yet. conflict expected. commit 14
