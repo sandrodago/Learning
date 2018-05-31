@@ -2,6 +2,7 @@ This is commit number 1 for Rebase.
 This is commit number 2 on a new Branch.
 
 This is a 6th commit to see what happens when we rebase back to the child branch.
+This shouldnt have a conflict, COMMIT 11 BIATCH!!!!!
 
 This should be the 3rd commit.. branch is master
 This is now the fourth commit done on Master branch..
